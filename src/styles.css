@@ -9,3 +9,6 @@ h1 {
 h3 {
   color: green;
 }
+input {
+  margin: 1rem;
+}
