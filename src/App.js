@@ -4,10 +4,11 @@ import "./styles.css";
 export default function App() {
   const [result, setResult] = useState("");
   function inputHandler() {
-    var year = parseInt(event.target.value);
+    var year = event.target.value;
 
     var result;
-    if (String(year).length === 4) {
+    if (year.length === 4) {
+      year = parseInt(year);
       if (year % 4 === 0) {
         if (year % 100 === 0) {
           if (year % 400 === 0) result = "You are a leap year born!";
